@@ -39,6 +39,7 @@ class Solution {
             depth--;
         }
         if(s.charAt(i) == ')' && s.charAt(i-1) == '('){
+            //Meat of the solution.
             score += Math.pow(2, depth);
         }    
     }
