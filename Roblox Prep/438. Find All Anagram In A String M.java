@@ -33,7 +33,7 @@ import java.util.Map;
 class Solution {
     public List<Integer> findAnagrams(String s, String t) {
         //https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem.
-        LinkedList<Integer> result = new LinkedList();
+        LinkedList<Integer> result = new LinkedList<>();
         if(t.length()> s.length()) return result;
         Map<Character, Integer> map = new HashMap<>();
         for(char c : t.toCharArray()){
