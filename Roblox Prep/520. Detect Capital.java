@@ -20,6 +20,10 @@ Output: false
 
 class Solution {
     public boolean detectCapitalUse(String word) {
+        //if first is capital,rest must be capital-CASE I
+        //if first is capital rest must be small or the whole thing must be small CASE II
+        //else casse //First letter doesn't matter rest must be smaller 
+
         int n = word.length();
         if (n == 1) {
             return true;
@@ -32,8 +36,9 @@ class Solution {
                     return false;
                 }
             }
-        //First Capital and rest small or everything lower case 
-        } else {
+        //First letter doesn't matter rest must be smaller 
+        } 
+        else {
             for (int i = 1; i < n; i++) {
                 if (Character.isUpperCase(word.charAt(i))) {
                     return false;
