@@ -23,7 +23,6 @@ class Solution {
         int[] count = new int[128];
         for(char c: s.toCharArray()) count[c]++;
         for(char c: t.toCharArray()) count[c]--;
-        int result = 0;
         for(int i = 0; i<count.length; i++){
             //use condition when char != 0, because + and - operations above should make 
             //everything 0
